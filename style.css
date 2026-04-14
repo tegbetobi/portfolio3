@@ -1,0 +1,134 @@
+/* GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0d1117;
+  color: #e6edf3;
+  line-height: 1.6;
+}
+
+/* HERO SECTION */
+.hero {
+  background: linear-gradient(135deg, #161b22, #0f172a);
+  padding: 80px 20px;
+  text-align: center;
+  border-bottom: 1px solid #30363d;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #58a6ff;
+  margin-bottom: 15px;
+}
+
+.hero .subtitle {
+  font-size: 1.2rem;
+  color: #8b949e;
+  margin-bottom: 25px;
+}
+
+.hero-buttons a {
+  display: inline-block;
+  margin: 8px;
+  padding: 12px 25px;
+  background: #238636;
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.hero-buttons a:hover {
+  background: #2ea043;
+}
+
+/* GRID LAYOUT */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+/* CARD */
+.card {
+  background: #161b22;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #30363d;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+}
+
+.card h2 {
+  color: #58a6ff;
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #8b949e;
+}
+
+.card ul {
+  margin-left: 18px;
+}
+
+.card li {
+  margin-bottom: 6px;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #238636;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #2ea043;
+}
+
+.small-btn {
+  font-size: 13px;
+  padding: 6px 14px;
+  margin-top: 8px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 25px;
+  border-top: 1px solid #30363d;
+  margin-top: 50px;
+  color: #8b949e;
+}
+
+/* RESPONSIVE TYPOGRAPHY */
+@media(max-width: 768px){
+  .hero h1{
+    font-size:2.4rem;
+  }
+  .hero .subtitle{
+    font-size:1rem;
+  }
+}
